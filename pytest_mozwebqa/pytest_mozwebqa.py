@@ -298,10 +298,10 @@ def pytest_addoption(parser):
                      metavar='int',
                      help='use a proxy running on this port.')
     group._addoption('--eventlistener',
-                    action='store',
-                    dest='event_listener',
-                    metavar='str',
-                    help='selenium eventlistener class, e.g. package.module.EventListenerClassName (webdriver)')
+                     action='store',
+                     dest='event_listener',
+                     metavar='str',
+                     help='selenium eventlistener class, e.g. package.module.EventListenerClassName (webdriver)')
 
     group = parser.getgroup('safety', 'safety')
     group._addoption('--sensitiveurl',
